@@ -1,0 +1,76 @@
+:root{
+    --turquoise-90: #001412;
+    --turquoise-80: #012825;
+    --turquoise-70: #013c37;
+    --turquoise-60: #015049;
+    --turquoise-50: #02655c;
+    --turquoise-40: #02796e;
+    --turquoise-30: #028d80;
+    --turquoise-20: #02a192;
+    --turquoise-10: #03b5a5;
+    --turquoise: #03c9b7;
+    --turquoise-01: #1ccebe;
+    --turquoise-02: #35d4c5;
+    --turquoise-03: #4fd9cd;
+    --turquoise-04: #68dfd4;
+    --turquoise-05: #81e4db;
+    --turquoise-06: #9ae9e2;
+    --turquoise-07: #b3efe9;
+    --turquoise-08: #cdf4f1;
+    --turquoise-09: #e6faf8;
+
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --light: #f5f7f8;
+    --dark: #343a40;
+    --orange: #f79502;
+    --active: #04AA6D;
+
+    --gray-10: #d4dbdd;
+    --gray-09: #d4dbdd;
+    --gray-08: #b8c3c7;
+    --gray-07: #9baab0;
+    --gray-06: #7f929a;
+    --gray-05: #657980;
+    --gray-04: #4f5e64;
+    --gray-03: #384347;
+    --gray-02: #22282b;
+    --gray-01: #0b0d0e;
+
+    --gradient: radial-gradient(circle, #015049, #003f44, #002e39, #071d2a, #040c18);
+    --bg-yasta: var(var(--gradient));
+}
+
+*,
++:after,
+*:before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--light);
+    background-image: var(--gradient);
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.yasta-code{
+}
+.nav{}
+.row{
+    width: 1400px;
+    margin: 0 auto;
+}
