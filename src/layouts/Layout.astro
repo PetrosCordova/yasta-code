@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+
+const {title, description} = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content={description}>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	</head>
+	<body>
+		<div class="container yasta-code">
+            <slot />
+		</div>
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script>import "../scripts/main.js";</script>
+	</body>
+</html>
