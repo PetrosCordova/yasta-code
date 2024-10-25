@@ -1,0 +1,33 @@
+---
+const {id} = Astro.props;
+---
+
+<div class="hamburger" id={id}>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>  
+</div>
+
+<style>
+    .hamburger{
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .line{
+        background: var(--gray-01);
+        height: 2px;
+        width: 20px;
+    }
+    .hamburger:hover{
+        background: var(--gray-09);
+    }
+</style>
