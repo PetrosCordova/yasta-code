@@ -1,3 +1,4 @@
+// Navigation and Sidebar
 const menuBtn = document.getElementById('menuBtn');
 const sideBtn = document.getElementById('sideBtn');
 const sidebar = document.getElementById('sidebar');
@@ -15,3 +16,7 @@ content.addEventListener('click', ()=> {
         toggleSidebar();
     }
 });
+
+// Footer year
+const year = document.getElementById('year');
+year.textContent = new Date().getFullYear().toString();
